@@ -1,4 +1,6 @@
 Miniblog::Application.routes.draw do
+  resources :messages
+
   root :to => "welcome#index"
 
   get "welcome/index"
